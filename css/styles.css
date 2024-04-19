@@ -5,9 +5,10 @@ body {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* width: 1158px; */
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -211,8 +212,10 @@ img {
 
 /* ----------------------2 SECTION------------------------------- */
 .features-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;   
+  padding-bottom: 120px; */ /*6 work*/
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -230,12 +233,15 @@ img {
 
 .main-menu-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap; /*6 work*/
+  /* gap: 24px; */
+  gap: 72px;
   text-align: left;
 }
 
 .main-menu-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  width: 100%; /*6 work*/
 }
 
 .overlay-features {
@@ -250,20 +256,25 @@ img {
 }
 
 .main-menu-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  /* font-weight: 500; */ /*6 work*/
+  font-weight: 700;
+  /* font-size: 20px; */ /*6 work*/
+  font-style: 36px;
+  /* line-height: 1.2; */ /*6 work*/
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .main-menu-text {
+  font-weight: 500; /*6 work*/
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  max-width: 264px;
+  /* max-width: 264px; */ /*6 work*/
   margin: 0 auto;
 }
 
@@ -852,3 +863,66 @@ img {
 }
 
 /* ----------------------------------------------------- */
+/* ------------------------TABLET@-------------------- */
+
+/* ---------------------------------1------------------- */
+
+/* -------------------------------2------------------------ */
+@media screen and (min-width 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/* -------------------------------3--------------------------- */
+
+/* --------------------------------4----------------------------- */
+
+/* ---------------------------------footer-------------------------- */
+@media screen {
+}
+/* ----------------------------------------------------- */
+/* ------------------------MAIN-PAGE@-------------------- */
+
+/* ---------------------------------1------------------- */
+
+/* -------------------------------2------------------------ */
+@media screen and (min-width 1440px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .main-menu-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .main-menu-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .main-menu-subtitle {
+    font-weight: 500;
+    font-style: 20px;
+    line-height: 1.2;
+  }
+
+  .main-menu-text {
+    font-weight: 400;
+    max-width: 264px;
+  }
+}
+/* -------------------------------3--------------------------- */
+
+/* --------------------------------4----------------------------- */
+
+/* ---------------------------------footer-------------------------- */
+/* ------------------------------------------------------------------------------- */
