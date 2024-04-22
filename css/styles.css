@@ -156,8 +156,10 @@ img {
 
 .main-section-holder {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */ /*6 work*/
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -172,14 +174,19 @@ img {
 
 .main-holder-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px; */ /*6 work*/
+  font-size: 36px; /*6 work*/
+  /* line-height: 1.07; */ /*6 work*/
+  line-height: 1.11; /*6 work*/
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
-  margin-bottom: 48px;
-  margin: 0 auto 48px auto;
+  /* max-width: 496px; */ /*6 work*/
+  max-width: 216px; /*6 work*/
+  /* margin-bottom: 48px; */ /*6 work*/
+  margin-bottom: 72px; /*6 work*/
+  /* margin: 0 auto 48px auto; */ /*6 work*/
+  margin: 0 auto 72px auto; /*6 work*/
 }
 
 .main-button {
@@ -410,8 +417,11 @@ img {
 
 .benefits-item {
   /* width: calc((100% - 2 * 24px) / 3); */ /*6 work*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   margin-bottom: 48px; /*6 work*/
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); /*6 work*/
+  background: #fff; /*6 work*/
 }
 
 .benefits-item:hover .benefits-cover-text {
@@ -423,11 +433,11 @@ img {
   overflow: hidden;
 }
 
-.benefits-item:hover {
+/* .benefits-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-}
+} */ /*6 work*/
 
 .wrap-benefits-item {
   border: 1px solid #e7e9fc;
@@ -465,6 +475,7 @@ img {
   transform: translateY(100%);
   transition: transform 250ms linear;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none; /*6 work*/
 }
 
 /* ----------------------------------------------------- */
@@ -871,12 +882,22 @@ img {
 }
 
 /* ----------------------------------------------------- */
-/* ------------------------TABLET@-------------------- */
-
-/* ---------------------------------1------------------- */
+/* --------------------------TABLET@-------------------- */
 
 @media screen and (min-width: 768px) {
-  /* -------------------------------2------------------------ */
+  /* ---------------------------1----------------------- */
+  .main-section-holder {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .main-holder-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+  }
+  /* ---------------------------2----------------------- */
 
   .container {
     width: 768px;
@@ -901,7 +922,7 @@ img {
     max-width: 356px;
   }
 
-  /* -------------------------------3--------------------------- */
+  /* ---------------------------3----------------------- */
 
   .section-menu-list {
     gap: 64px 24px;
@@ -914,7 +935,7 @@ img {
     max-width: 264px;
   }
 
-  /* --------------------------------4----------------------------- */
+  /* ---------------------------4----------------------- */
 
   .benefits-list {
     display: flex;
@@ -924,18 +945,26 @@ img {
 
   .benefits-item {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 }
 
-/* ---------------------------------footer-------------------------- */
+/* --------------------------footer--------------------- */
 
 /* ----------------------------------------------------- */
-/* ------------------------MAIN-PAGE@-------------------- */
-
-/* ---------------------------------1------------------- */
+/* ------------------------MAIN-PAGE@------------------- */
 
 @media screen and (min-width: 1440px) {
-  /* -------------------------------2------------------------ */
+  /* ---------------------------1----------------------- */
+  .main-section-holder {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .main-holder-title {
+    margin: 0 auto 48px auto;
+  }
+  /* ---------------------------2----------------------- */
 
   .container {
     width: 1158px;
@@ -979,7 +1008,7 @@ img {
     max-width: 264px;
   }
 
-  /* -------------------------------3--------------------------- */
+  /* ---------------------------3----------------------- */
 
   .main-section-picture {
     padding-top: 120px;
@@ -995,7 +1024,7 @@ img {
     width: calc((100% - 3 * 24px) / 4);
   }
 
-  /* --------------------------------4----------------------------- */
+  /* ---------------------------4----------------------- */
 
   .section-benefits {
     padding-top: 120px;
@@ -1010,8 +1039,20 @@ img {
 
   .benefits-item {
     width: calc((100% - 2 * 24px) / 3);
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .benefits-cover-text {
+    display: block;
+  }
+
+  .benefits-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
   }
 }
 
-/* ---------------------------------footer-------------------------- */
-/* ------------------------------------------------------------------------------- */
+/* --------------------------footer--------------------- */
+/* ----------------------------------------------------- */
