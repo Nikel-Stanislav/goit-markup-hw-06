@@ -1021,11 +1021,15 @@ img {
   }
 
   .logo-text {
-    /* margin-right: 24px; */
+    margin-right: 24px;
   }
 
   .footer-logo {
     justify-content: start;
+  }
+
+  .footer-text {
+    max-width: 264px;
   }
 
   .footer-subtitle {
