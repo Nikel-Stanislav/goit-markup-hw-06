@@ -1216,11 +1216,38 @@ img {
   .footer-logo-text {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
     width: 1125px;
   }
 
   .logo-text {
     margin-right: 120px;
+    min-width: 264px;
+  }
+
+  .footer-icon-list {
+    margin-right: 80px;
+  }
+
+  .icon-link:hover {
+    background-color: #31d0aa;
+  }
+
+  .icon-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-input-wrap {
+    display: block;
+  }
+
+  .footer-input {
+    width: 264px;
+    opacity: 1;
+  }
+
+  .footer-input::placeholder {
+    opacity: 1;
   }
 }
 
