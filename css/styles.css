@@ -928,6 +928,7 @@ img {
   height: 100%;
   position: fixed;
   top: 0;
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -941,7 +942,7 @@ img {
 .mobile-modal {
   width: 320px;
   min-height: 640px;
-  background: #fff;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -949,7 +950,7 @@ img {
   padding: 72px 24px 40px 16px;
 }
 
-.mobile-button {
+.mobile-open-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -963,7 +964,50 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  /* border: none; */
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 168px;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.link-studio {
+  color: #404bbf;
+}
+
+.mobile-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mobile-address-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.link-tel {
+  color: #4d5ae5;
+}
+
+.mobile-icon-list {
+  display: flex;
+  gap: 40px;
 }
 
 /* -------------------------TABLET@--------------------- */
