@@ -1145,6 +1145,10 @@ img {
     width: 408px;
     min-height: 584px;
   }
+
+  .mobile-is-open {
+    display: none;
+  }
 }
 
 /* ----------------------------------------------------- */
