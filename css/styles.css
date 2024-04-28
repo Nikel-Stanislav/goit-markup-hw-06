@@ -176,7 +176,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -928,26 +928,19 @@ img {
   height: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(46, 47, 66, 0.4);
+  left: 0;
+  background-color: #ffffff;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  padding: 72px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-is-open {
   opacity: 2;
   pointer-events: auto;
   visibility: visible;
-}
-
-.mobile-modal {
-  width: 320px;
-  min-height: 640px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 72px 24px 40px 16px;
 }
 
 .mobile-open-btn {
@@ -1008,6 +1001,7 @@ img {
 .mobile-icon-list {
   display: flex;
   gap: 40px;
+  justify-content: start;
 }
 
 /* -------------------------TABLET@--------------------- */
@@ -1049,6 +1043,11 @@ img {
   .main-section-holder {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
   }
 
   .main-holder-title {
@@ -1180,6 +1179,11 @@ img {
   .main-section-holder {
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
 
   .main-holder-title {
